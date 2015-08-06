@@ -1,0 +1,48 @@
+/* -------  Carousel  -------- */
+
+.carousel {
+	margin-top: 62px;
+	margin-bottom: 40px;
+	border-bottom: solid #EEE 1px;
+	 height: 420px;
+}
+
+.carousel .item {
+	height: 358px;
+	margin: 0 8%;
+	background-color: #f5f5f5;
+}
+
+.carousel-indicators {
+	bottom: 0;
+}
+
+.carousel-inner{
+  background-color: #f5f5f5;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+.container-fluid{
+  padding:0px;
+}
+
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+}
+
+/* .item { */
+/* 	border: solid green 1px; */
+/* } */
+/* .carousel-caption { */
+/* 	border: solid red 1px; */
+/* } */
+/* .animation-field { */
+/* 	border: dotted blue 1px; */
+/* } */
+
+
+

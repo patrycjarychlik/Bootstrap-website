@@ -1,0 +1,71 @@
+
+
+<?
+ $sciez="./galeria";
+ $galerie=file('galeria/galerie.txt');
+ while(list($key,$fil)=each($galerie))
+ {
+   list($gal, $opis, $zdjecie) = explode("#",$fil);
+   if($gal==$f_gal)
+   {
+	   $g_opis=trim($opis);
+   }
+ }
+ echo "<p class='lead'>$g_opis</p><div id='links'>";
+ $dir=opendir("galeria/$f_gal");
+
+ $k=0;
+
+ while($file=readdir($dir))
+{
+  if(substr($file,strlen($file)-3,3)=="jpg")
+  {    
+   $k++;
+   $listaplikow[$k]=$file;
+  }
+}
+closedir($dir);
+sort($listaplikow);
+foreach($listaplikow as $file)
+{
+   echo "<a href='thumb.php?url=galeria/".$f_gal."/".$file."&pheight=600' title='$g_opis' data-gallery><img src='thumb.php?url=galeria/".$f_gal."/".$file."&pwidth=90' alt='$g_opis' ></a>";
+   
+   
+}
+
+?>
+</div>
+
+<div id="blueimp-gallery" class="blueimp-gallery"  data-use-bootstrap-modal="false">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Poprzednie
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Następne
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

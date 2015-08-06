@@ -1,0 +1,98 @@
+/* -------  Carousel - CONTENT  -------- */
+
+.carousel-caption h3, .carousel .icon-container, .carousel-caption button
+	{
+	background-color: #94c046;
+}
+
+.animation-field {
+	text-rendering: optimizelegibility;
+	position: relative;
+	margin: 80px 5%;
+	height: 260px;
+	width: 90%;
+}
+
+/* .animation-field h1, h2, h3 { */
+.first-title, .second-title {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: 600;
+	line-height: 1;
+	color: #FFF;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	margin: 5px 0px;
+}
+
+.animation-field p {
+	background-color: #f5f5f5;
+	padding: 20px 0;
+	max-width: 340px;
+	text-align: left;
+	font-size: 0.90em;
+	line-height: 1.4em;
+	font-weight: 600;
+	color: #414c51;
+	letter-spacing: 1px;
+}
+
+/* .animation-field  h3:first-child { */
+.first-title {
+	font-size: 40px;
+	padding: 1px 7px;
+	background-color: #94c046;
+}
+
+/* .animation-field  h3:nth-child(2) { */
+.second-title {
+	font-size: 1.6em;
+	background-color: #414c51;
+	padding: 0.2em 0.3em;
+}
+
+.carousel-caption h3 {
+	padding: .5em;
+}
+
+.carousel .icon-container {
+	display: inline-block;
+	font-size: 25px;
+	padding: 1em;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.carousel-caption button {
+	border-color: #d9ff96;
+	margin-top: 1em;
+}
+
+/* Animation delays */
+.carousel-caption h3:first-child {
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+.animation-field h3:nth-child(2) {
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+.animation-field p {
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+.animation-field button {
+	-webkit-animation-delay: 3s;
+	-moz-animation-delay: 3s;
+	animation-delay: 3s;
+}
