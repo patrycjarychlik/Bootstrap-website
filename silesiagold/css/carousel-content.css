@@ -1,5 +1,4 @@
 /* -------  Carousel - CONTENT  -------- */
-
 .carousel-caption h3, .carousel .icon-container, .carousel-caption button
 	{
 	background-color: #94c046;
@@ -8,8 +7,8 @@
 .animation-field {
 	text-rendering: optimizelegibility;
 	position: relative;
-	margin: 80px 5%;
-	height: 260px;
+	margin: 0 auto;
+	padding-top: 100px;
 	width: 90%;
 }
 
@@ -27,6 +26,7 @@
 	top: 0px;
 	left: 0px;
 	margin: 5px 0px;
+	z-index: 3;
 }
 
 .animation-field p {
@@ -39,6 +39,7 @@
 	font-weight: 600;
 	color: #414c51;
 	letter-spacing: 1px;
+	z-index: 4;
 }
 
 /* .animation-field  h3:first-child { */
@@ -73,16 +74,16 @@
 }
 
 /* Animation delays */
-.carousel-caption h3:first-child {
-	-webkit-animation-delay: 1s;
-	-moz-animation-delay: 1s;
-	animation-delay: 1s;
-}
-
 .animation-field h3:nth-child(2) {
 	-webkit-animation-delay: 2s;
 	-moz-animation-delay: 2s;
 	animation-delay: 2s;
+}
+
+.animation-field .imageSL {
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
 }
 
 .animation-field p {
@@ -91,8 +92,19 @@
 	animation-delay: 2s;
 }
 
-.animation-field button {
-	-webkit-animation-delay: 3s;
-	-moz-animation-delay: 3s;
-	animation-delay: 3s;
+.imageSL {
+	position: absolute;
+	top: 40px;
+	right: -180px;
+}
+
+.imageSL img {
+	z-index: 2;
+}
+
+.sliderBG {
+	z-index: 1;
+	position: relative;
+	top: -70px;
+	right: 107px;
 }
