@@ -9,11 +9,13 @@ require ("header.htm");
 <?php
 require ("navigation.htm");
 
-// require ("karuzela.htm");
-require ("slider.htm");
+if($title == "ofirmie"){
+	error_log ($title);
+	require ("slider.htm");
+}
 require ($fileName);
-
 ?>
+
 	</div>
 </div>
 <!----- FOOTER ----->

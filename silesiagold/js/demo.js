@@ -25,7 +25,11 @@
 	doAnimations($firstAnimatingElems);
 	
 	//Pause carousel  
-	$myCarousel.carousel('pause');
+//	$myCarousel.carousel('pause');
+	
+	$myCarousel.carousel({
+		  interval: 5000
+		});
 	
 	
 	//Other slides to be animated on carousel slide event 
