@@ -1,3 +1,137 @@
-.subsideTitle{
-	height:200px;
+/* Main */
+BODY {
+	font-size: 16px;
+}
+
+p {
+	font-family: 'Roboto';
+	text-align: justify;
+	font-weight: 300;
+	font-size: 0.95em;
+	line-height: 1.60em;
+}
+
+.p-inline {
+	font-size: 0.95em;
+	line-height: 1.60em;
+	font-family: 'Roboto';
+	font-weight: 300;
+}
+
+.p-inline li {
+	padding-left: 0.8em;
+}
+
+html, body {
+	height: 100%;
+}
+
+#wrap {
+	min-height: 100%;
+	height: auto;
+	margin: 60px auto -60px;
+	padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+.footer {
+	height: 200px;
+	background-color: #323232;
+	margin-top: 50px;
+}
+
+.footer a, .footer a:visited, .footer a:visited:hover 
+	{
+	display: block;
+	width: 70px;
+	height: 70px;
+	border-radius: 70px;
+	font-size: 2.5em;
+	background-color: #000;
+	color: #fff;
+	padding-top: 20%;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.footer a:hover, .footer a:visited:hover {
+	background-color: #8fbe3c;
+}
+
+.onas .row div {
+	margin-top: 40px;
+}
+
+.col-md-2 {
+	
+}
+
+.quality div {
+	width: 100%;
+	height: 100%;
+	font-size: 100px;
+}
+
+.quality div {
+	margin: 0px auto;
+	padding-top: 10px;
+	text-align: center;
+	color: #DEDEDE;
+}
+
+/* Subsites */
+.subsideTitle {
+	height: 150px;
+}
+
+.subtitleLine {
+	height: 2px;
+	border: 0;
+	background-color: #94C046;
+	padding: 0px;
+	margin: 0px;
+}
+
+.subsideTitle h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 4.0em;
+	line-height: 1em;
+	padding: 0px;
+	margin: 40px 0px;
+}
+
+@media ( max-width : 480px) {
+	.subsideTitle h1 {
+		font-size: 3.2em;
+	}
+}
+
+.inset-text {
+	color: rgba(148, 192, 70, 0.8);
+	text-shadow: 1px 4px 6px #fff, 0 0 0 #000, 1px 4px 6px #fff;
+}
+
+::-moz-selection {
+	background: #5af;
+	color: #fff;
+	text-shadow: none;
+}
+
+::selection {
+	background: #5af;
+	color: #fff;
+	text-shadow: none;
+}
+
+.subtitleContent {
+	margin-top: 4em;
+}
+
+
+/* RECYKLING */
+
+.recykling img {
+	padding: 18px;
+	
 }

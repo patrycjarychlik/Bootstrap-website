@@ -5,15 +5,17 @@
 }
 
 .animation-field {
+	background-color: #f5f5f5;
 	text-rendering: optimizelegibility;
 	position: relative;
 	margin: 0 auto;
-	padding-top: 100px;
+	padding-top: 10px;
 	width: 90%;
 }
 
 /* .animation-field h1, h2, h3 { */
 .first-title, .second-title {
+	background-color: #f5f5f5;
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: -1px;
@@ -24,13 +26,14 @@
 	display: inline-block;
 	position: relative;
 	top: 0px;
-	left: 0px;
+	left: 2px;
 	margin: 5px 0px;
 	z-index: 3;
+	box-shadow: 0px 0px 10px #f5f5f5;
 }
 
 .animation-field p {
-	background-color: #f5f5f5;
+	background-color: #f5f5f5; box-shadow : -15px 0px 0px #f5f5f5;
 	padding: 20px 0;
 	max-width: 340px;
 	text-align: left;
@@ -40,6 +43,7 @@
 	color: #414c51;
 	letter-spacing: 1px;
 	z-index: 4;
+	box-shadow: -15px 0px 0px #f5f5f5;
 }
 
 /* .animation-field  h3:first-child { */
@@ -94,8 +98,9 @@
 
 .imageSL {
 	position: absolute;
-	top: 40px;
+	top: 0px;
 	right: -170px;
+	z-index: 2;
 	background-color: #f5f5f5;
 }
 
@@ -108,4 +113,10 @@
 	position: relative;
 	top: -70px;
 	right: 107px;
+}
+
+@media ( max-width : 768px) {
+	.imageSL {
+		right: -200px;
+	}
 }
