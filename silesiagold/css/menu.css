@@ -115,11 +115,14 @@ a:hover, a:active, a:focus {
 	font-size: 0.8em;
 }
 
-@media ( min-width : 768px) and (max-width: 992px) {
-	body {
-		font-size: 14px;
+@media (max-width: 992px) {
+	.navbar-default {
+		font-size: 15px;
 	}
 	.navbar-default .navbar-brand {
 		padding: 21px 5px;
+	}
+	.navbar-default .navbar-brand img{
+		width: 90%;
 	}
 }

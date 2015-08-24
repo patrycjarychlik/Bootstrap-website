@@ -1,5 +1,5 @@
 <?php
-require ("Engine.php");
+require ("engine.php");
 require ("header.htm");
 ?>
 <body>
