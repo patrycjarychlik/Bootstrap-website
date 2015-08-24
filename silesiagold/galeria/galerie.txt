@@ -1,1 +1,1 @@
-zlom1#Przykładowa galeria zdjęć#galeria/zlom1/g10.jpg
+zlom1#Album 1 #galeria/zlom1/g10.jpg

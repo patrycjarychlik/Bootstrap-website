@@ -1,6 +1,12 @@
-
-
-<?
+<div class="container-fluid gray  subsideTitle">
+	<div class="container">
+		<h1 class='inset-text'>Zdjęcia</h1>
+	</div>
+</div>
+<hr class="subtitleLine"></hr>
+<div class="container subtitleContent">
+<?php
+$f_gal=$_GET ['f_gal'];
  $sciez="./galeria";
  $galerie=file('galeria/galerie.txt');
  while(list($key,$fil)=each($galerie))
@@ -34,6 +40,7 @@ foreach($listaplikow as $file)
 }
 
 ?>
+</div>
 </div>
 
 <div id="blueimp-gallery" class="blueimp-gallery"  data-use-bootstrap-modal="false">

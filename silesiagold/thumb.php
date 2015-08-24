@@ -1,7 +1,17 @@
-<?
-    $url=$_GET['url'];
-   $pwidth=$_GET['pwidth'];
-   $pheight=$_GET['pheight'];
+<?php
+$url = $_GET ['url'];
+
+if (isset ( $_GET ['pwidth'] )) {
+	$pwidth = $_GET ['pwidth'];
+}else{
+	$pwidth = 140;
+}
+
+if (isset ( $_GET ['pheight'] )) {
+	$pheight = $_GET ['pheight'];
+}else{
+	$pheight = 140;
+}
    
    
    header ("Content-type: image/jpeg"); # We will create an *.jpg
@@ -31,6 +41,6 @@ ImageCopyResampled($thumb, $pic, 0, 0, 0, 0,
     
   	//imagegammacorrect ($thumb, 1.0, 1.4 ) ;
 
-    ImageJPEG($thumb,"",95); # Thumbnail as JPEG
+    ImageJPEG($thumb,null,95); # Thumbnail as JPEG
     }
 ?>
