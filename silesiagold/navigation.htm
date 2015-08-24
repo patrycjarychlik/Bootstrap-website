@@ -1,6 +1,12 @@
 <?php 
 function isActive($link){
-    if($_GET['tytul']== $link){
+    if(isset ( $_GET ['tytul'] ) && $_GET['tytul']== $link){
+        echo ' class="active" ';
+	}
+}
+
+function defaultActive(){
+    if(!isset($_GET['tytul'])){
         echo ' class="active" ';
 	}
 }
@@ -19,7 +25,7 @@ function isActive($link){
     </div>
     <nav class="collapse navbar-collapse">
      <ul class="nav navbar-nav navbar-right">
-			    <li <?=isActive("ofirmie")?> >
+			    <li <?=isActive("ofirmie") ; defaultActive()?>> 
 			    	<hr><a href="?tytul=ofirmie">O firmie</a></li>
                 <li <?=isActive("zlomstalowy")?> >
                	 <hr><a href="?tytul=zlomstalowy">Złom stalowy</a></li>

@@ -130,6 +130,12 @@ p {
 .recykling img {
 	padding: 18px;
 }
+/* -------------------ZŁOM STALOWY-------------------- */
+@media screen and (max-width: 991px){
+	.zlom-images img{
+		padding: 12px 0px;
+	}
+}
 
 /* --------------------KONTAKT---------------------- */
 .adress p {

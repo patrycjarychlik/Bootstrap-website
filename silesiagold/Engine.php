@@ -10,7 +10,7 @@ ini_set ( "log_errors", 1 );
 	} else {
 		$title = "ofirmie";
 	}
-	error_log ($title);
+	
 	$fileName = getFileName($title);
 	
 	if ((! file_exists ( $fileName ))) {

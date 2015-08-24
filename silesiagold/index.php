@@ -11,7 +11,6 @@ require ("navigation.htm");
 	
 <?php
 if ($title == "ofirmie") {
-	error_log ( $title );
 	require ("slider.htm");
 }
 require ($fileName);
