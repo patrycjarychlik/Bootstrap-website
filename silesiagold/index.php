@@ -21,8 +21,7 @@ require ($fileName);
 	</div>
 	<!----- FOOTER ----->
 	<footer class="container-fluid footer .navbar-fixed-bottom ">
-		<div class="container">
-			<hr class="divider">
+		<div class="container divider">
 			<p class="pull-right">
 				<a href="#" onclick="$.scrollTo(0, {duration:400});"> <span class="glyphicon glyphicon-menu-up"></span></a>
 			</p>
