@@ -39,7 +39,7 @@ p {
 	margin-top: 50px;
 }
 
-.footer .footer-inside{
+.footer .footer-inside {
 	padding-top: 40px;
 }
 
@@ -158,28 +158,37 @@ p {
 /* ------------ */
 
 /* Przykładowe szerokości ekranu */
+@media screen and (min-width: 1366px) {
+	p {
+		font-size: 1em;
+		line-height: 1.8em;
+	}
+	.p-inline {
+		font-size: 1em;
+		line-height: 1.8em;
+	}
+	.animation-field p {
+		font-size: 1em;
+		line-height: 1.3em;
+	}
+}
 
 /* Large desktops and laptops */
-@media (min-width: 1200px) {
-
+@media ( min-width : 1200px) {
 }
 
 /* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-
+@media ( min-width : 992px) and (max-width: 1199px) {
 }
 
 /* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-
+@media ( min-width : 768px) and (max-width: 991px) {
 }
 
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-
+@media ( max-width : 767px) {
 }
 
 /* Portrait phones and smaller */
-@media (max-width: 480px) {
-
+@media ( max-width : 480px) {
 }
