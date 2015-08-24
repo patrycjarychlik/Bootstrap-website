@@ -120,3 +120,14 @@
 		right: -200px;
 	}
 }
+
+@media ( max-width : 530px) {
+	.imageSL {
+		right: -230px;
+	}
+}
+@media ( max-width : 480px) {
+	.imageSL {
+		right: -270px;
+	}
+}

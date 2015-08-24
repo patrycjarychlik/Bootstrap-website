@@ -8,7 +8,7 @@ ini_set ( "log_errors", 1 );
 	if (isset ( $_GET ['tytul'] )) {
 		$title = $_GET ['tytul'];
 	} else {
-		$title = "work";
+		$title = "ofirmie";
 	}
 	error_log ($title);
 	$fileName = getFileName($title);
