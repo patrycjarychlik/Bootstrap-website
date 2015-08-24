@@ -39,6 +39,10 @@ p {
 	margin-top: 50px;
 }
 
+.footer .footer-inside{
+	padding-top: 40px;
+}
+
 .footer a, .footer a:visited, .footer a:visited:hover {
 	display: block;
 	width: 70px;
