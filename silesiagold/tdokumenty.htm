@@ -1,17 +1,17 @@
-<div class="container-fluid gray  subsideTitle">	<div class="container">		<h1 class='inset-text'>Zdjęcia</h1>	</div></div><hr class="subtitleLine"></hr><div class="container subtitleContent">	<?php
-$f_gal=$_GET ['f_gal'];
+<div class="container-fluid gray  subsideTitle">	<div class="container">		<h1 class='inset-text'>Dokumenty</h1>	</div></div><hr class="subtitleLine"></hr><div class="container subtitleContent">	<?php
+
  $sciez="./galeria";
- $galerie=file('galeria/galerie.txt');
+ $galerie="dokumenty#Album 1 #galeria/dokumenty/g10.jpg";
  while(list($key,$fil)=each($galerie))
  {
    list($gal, $opis, $zdjecie) = explode("#",$fil);
-   if($gal==$f_gal)
+   if($gal=="dokumenty")
    {
 	   $g_opis=trim($opis);
    }
  }
- echo "<p class='lead'>$g_opis</p><div id='links'>";
- $dir=opendir("galeria/$f_gal");
+ echo "<p class='lead'></p><div id='links'>";
+ $dir=opendir("galeria/dokumenty");
 
  $k=0;
 
@@ -27,7 +27,7 @@ closedir($dir);
 sort($listaplikow);
 foreach($listaplikow as $file)
 {
-   echo "<a href='thumb.php?url=galeria/".$f_gal."/".$file."&pheight=600' title='$g_opis' data-gallery><img src='thumb.php?url=galeria/".$f_gal."/".$file."&pwidth=90' alt='$g_opis' class='img_g' ></a>";
+   echo "<a href='thumb.php?url=galeria/"."dokumenty"."/".$file."&pheight=600' title='$g_opis' data-gallery><img src='thumb.php?url=galeria/"."dokumenty"."/".$file."&pwidth=90' alt='$g_opis' class='img_g img_d'></a>";
    
    
 }
