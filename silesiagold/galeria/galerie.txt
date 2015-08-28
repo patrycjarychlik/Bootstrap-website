@@ -1,1 +1,2 @@
-zlom1#Album 1 #galeria/zlom1/g10.jpg
+album2#Album 1 #galeria/album2/dsc03229.jpg
+zlom1#Album 2 #galeria/zlom1/g13.jpg

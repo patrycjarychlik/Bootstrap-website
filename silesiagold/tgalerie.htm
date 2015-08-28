@@ -1,16 +1,16 @@
-<div class="container-fluid gray  subsideTitle">	<div class="container">		<h1 class='inset-text'>Zdjęcia</h1>	</div></div><hr class="subtitleLine"></hr><div class="container subtitleContent">	<div class="row">		<?php
+<div class="container-fluid gray  subsideTitle">	<div class="container">		<h1 class='inset-text'>Zdjęcia</h1>	</div></div><hr class="subtitleLine"></hr><div class="container subtitleContent">	<div class="row">		<div class="col-md-12 ">		<?php
  $galerie=file('galeria/galerie.txt');
 
  while(list($key,$fil)=each($galerie)){
 
    list($gal, $opis, $zdjecie) = explode("#",$fil); {
       $g_opis=trim($opis);
-	  echo "<div class=\"col-lg-4\">
-				<a href=\"index.php?tytul=galeria&f_gal=$gal\">
+	  echo "<div class=\"galleryEntry\" >
+				<a href=\"index.php?tytul=galeria&f_gal=$gal\" style=\"color: #8fbe3c;text-align: center\" >
 				<img class=\"img-circle\" src=\"thumb.php?url=$zdjecie&pheight=140&pwidth=140\" alt=\"$g_opis\" width=\"140\" height=\"140\">";
-	  echo "<p><br>$g_opis</p></a><p><a class=\"btn btn-default\" href=\"index.php?tytul=galeria&f_gal=$gal\" role=\"button\">Zobacz &raquo;</a></p></div>";
+	  echo "<p><br>$g_opis</p></a>		<p>			<a class=\"btn btn-default\" href=\"index.php?tytul=galeria&f_gal=$gal\" role=\"button\">Zobacz &raquo;</a>		</p>	</div>";
 		
    }
  }
  
-?>	</div>	<!-- /.row --></div>
+?>		</div>	</div>	<!-- /.row --></div>

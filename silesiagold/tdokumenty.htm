@@ -1,35 +1,1 @@
-<div class="container-fluid gray  subsideTitle">	<div class="container">		<h1 class='inset-text'>Dokumenty</h1>	</div></div><hr class="subtitleLine"></hr><div class="container subtitleContent">	<?php
-
- $sciez="./galeria";
- $galerie="dokumenty#Album 1 #galeria/dokumenty/g10.jpg";
- while(list($key,$fil)=each($galerie))
- {
-   list($gal, $opis, $zdjecie) = explode("#",$fil);
-   if($gal=="dokumenty")
-   {
-	   $g_opis=trim($opis);
-   }
- }
- echo "<p class='lead'></p><div id='links'>";
- $dir=opendir("galeria/dokumenty");
-
- $k=0;
-
- while($file=readdir($dir))
-{
-  if(substr($file,strlen($file)-3,3)=="jpg")
-  {    
-   $k++;
-   $listaplikow[$k]=$file;
-  }
-}
-closedir($dir);
-sort($listaplikow);
-foreach($listaplikow as $file)
-{
-   echo "<a href='thumb.php?url=galeria/"."dokumenty"."/".$file."&pheight=600' title='$g_opis' data-gallery><img src='thumb.php?url=galeria/"."dokumenty"."/".$file."&pwidth=90' alt='$g_opis' class='img_g img_d'></a>";
-   
-   
-}
-
-?></div></div><div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">	<!-- The container for the modal slides -->	<div class="slides"></div>	<!-- Controls for the borderless lightbox -->	<h3 class="title"></h3>	<a class="prev">‹</a> <a class="next">›</a> <a class="close">×</a> <a class="play-pause"></a>	<ol class="indicator"></ol>	<!-- The modal dialog, which will be used to wrap the lightbox content -->	<div class="modal fade">		<div class="modal-dialog">			<div class="modal-content">				<div class="modal-header">					<button type="button" class="close" aria-hidden="true">&times;</button>					<h4 class="modal-title"></h4>				</div>				<div class="modal-body next"></div>				<div class="modal-footer">					<button type="button" class="btn btn-default pull-left prev">						<i class="glyphicon glyphicon-chevron-left"></i> Poprzednie					</button>					<button type="button" class="btn btn-primary next">						Następne <i class="glyphicon glyphicon-chevron-right"></i>					</button>				</div>			</div>		</div>	</div></div>
+<div class="container-fluid gray subsideTitle">	<div class="container">		<h1 class='inset-text'>Dokumenty</h1>	</div></div><hr class="subtitleLine"></hr><div class="container subtitleContent">	<?phpfunction endsWith( $haystack, $needle ) {    return $needle === "" || ( ( $temp = strlen( $haystack ) - strlen( $needle ) ) >= 0 && strpos( $haystack, $needle, $temp ) !== FALSE );}$sciez   = "./galeria";$galerie = "dokumenty#Album 1 #galeria/dokumenty/g10.jpg";while ( list( $key, $fil ) = each( $galerie ) ) {    list( $gal, $opis, $zdjecie ) = explode( "#", $fil );    if ( $gal == "dokumenty" ) {        $g_opis = trim( $opis );    }}echo "<p class='lead'></p><div id='links'>";$dir = opendir( "galeria/dokumenty" );$k   = 0;while ( $file = readdir( $dir ) ) {    if ( substr( $file, strlen( $file ) - 3, 3 ) == "jpg" ) {        $k++;        $listaplikow[$k] = $file;    }}closedir( $dir );sort( $listaplikow );foreach ( $listaplikow as $file ) {    if ( endsWith( $file, ".jpg" ) ) {        echo "<a href='thumb.php?url=galeria/" . "dokumenty" . "/" . $file . "&pheight=600' title='$g_opis' data-gallery><img src='thumb.php?url=galeria/" . "dokumenty" . "/" . $file . "&pwidth=90' alt='$g_opis' class='img_g img_d' alt='$file' title='$file'></a>";    }}?>	<br>	<div class="col-md-12 ">		<h1 style="font-family: 'Roboto', Arial, Helvetica, sans-serif; color: gray; font-weight: 300; font-size: 1em;">Centralna Ewidencja i Informacja o Działalności Gospodarczej:</h1>	</div>	<div>		<a href='galeria/dokumenty/wpis G Glogowska.pdf' title="G.Głogowska" class='pdfLink'><div class='img_g img_d img_pdf'>				<b>G.Głogowska</b> - Centralna Ewidencja i Informacja o Działalności Gospodarczej			</div></a> <a href='galeria/dokumenty/wpis S Glogowski.pdf' title="S.Głogowski" class='pdfLink'><div class='img_g img_d img_pdf'>				<b>S.Głogowski</b> - Centralna Ewidencja i Informacja o Działalności Gospodarczej 2			</div></a>	</div>	<div style="clear: both;"></div>	<div id='downloadFileLink' class="col-md-12">		<h5>			<a href='download.php' title='pdf'>pobierz wszytskie dokumenty</a>		</h5>	</div></div></div><div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">	<!-- The container for the modal slides -->	<div class="slides"></div>	<!-- Controls for the borderless lightbox -->	<h3 class="title"></h3>	<a class="prev">‹</a> <a class="next">›</a> <a class="close">×</a> <a class="play-pause"></a>	<ol class="indicator"></ol>	<!-- The modal dialog, which will be used to wrap the lightbox content -->	<div class="modal fade">		<div class="modal-dialog">			<div class="modal-content">				<div class="modal-header">					<button type="button" class="close" aria-hidden="true">&times;</button>					<h4 class="modal-title"></h4>				</div>				<div class="modal-body next"></div>				<div class="modal-footer">					<button type="button" class="btn btn-default pull-left prev">						<i class="glyphicon glyphicon-chevron-left"></i> Poprzednie					</button>					<button type="button" class="btn btn-primary next">						Następne <i class="glyphicon glyphicon-chevron-right"></i>					</button>				</div>			</div>		</div>	</div></div>
